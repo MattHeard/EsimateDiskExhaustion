@@ -1,2 +1,7 @@
 #!/usr/bin/python3
-print("hello world")
+
+def printHelloWorld():
+    print("hello world")
+
+if __name__ == "__main__":
+    printHelloWorld()
