@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-def printHelloWorld():
+def estimate():
     print("hello world")
 
 if __name__ == "__main__":
-    printHelloWorld()
+    estimate()
