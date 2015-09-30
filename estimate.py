@@ -3,7 +3,8 @@
 from sys import stdin
 
 def estimateConf(conf):
-    print(conf)
+    confElements = conf.split(sep=" ")
+    print(confElements)
 
 def estimateConfsFromInput():
     for line in stdin:
