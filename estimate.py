@@ -7,8 +7,6 @@ def calcExhaustion(disk, procRates):
        
        procRates lists the rates at which each process fills 1 byte of disk
        space."""
-    print(disk)
-    print(procRates)
     eta = 0;
     while disk > 0:
         eta += 1
