@@ -2,14 +2,20 @@
 
 from sys import stdin
 
+def calcExhaustion(disk, procRates):
+    """Calculate how many seconds before the disk is filled.
+       
+       procRates lists the rates at which each process fills 1 byte of disk
+       space."""
+    print(disk)
+    print(procRates)
 
 def estimateConf(conf):
     """Estimate configuration from a string."""
     confElements = [int(x) for x in conf.split(sep=" ")]
     disk = confElements[0]
-    print(disk)
     procRates = confElements[1:]
-    print(procRates)
+    eta = calcExhaustion(disk, procRates);
 
 def estimateConfsFromInput():
     """Parse and estimate configurations from stdin."""
