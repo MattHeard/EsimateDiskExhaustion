@@ -9,6 +9,13 @@ def calcExhaustion(disk, procRates):
        space."""
     print(disk)
     print(procRates)
+    eta = 0;
+    while disk > 0:
+        eta += 1
+        for rate in procRates:
+            if eta % rate == 0:
+                disk -= 1
+    return eta
 
 def estimateConf(conf):
     """Estimate configuration from a string."""
@@ -16,6 +23,7 @@ def estimateConf(conf):
     disk = confElements[0]
     procRates = confElements[1:]
     eta = calcExhaustion(disk, procRates);
+    print(eta)
 
 def estimateConfsFromInput():
     """Parse and estimate configurations from stdin."""
